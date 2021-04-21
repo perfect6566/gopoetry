@@ -70,7 +70,7 @@ func (p *Processer) Analysisfile(filename string) error {
 func (p *Processer) Printpoetry() {
 	paths := p.Getfileslist()
 	if len(paths) == 0 {
-		log.Println("诗歌数据文件未找到，程序退出")
+		log.Println("诗歌数据文件未找到，请使用(-p 诗歌的数据文件目录)带入参数，程序退出")
 
 	}
 	for _, targetfilename := range paths {
